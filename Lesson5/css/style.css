@@ -37,6 +37,9 @@ p{
     bottom: 10px;
     font-size: 24px;
 }
+.start{
+    background-color: rgb(178, 77, 187);
+}
 .chapter1{
     background-color: rgb(214, 149, 149);
 }
