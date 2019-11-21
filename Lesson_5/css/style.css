@@ -8,6 +8,7 @@ h1, h2{
 p{
     color: #3b22aa;
     text-align: left;
+    margin: 0;
 }
  img{
     margin: 0 auto;
@@ -35,4 +36,19 @@ p{
     right: 10px;
     bottom: 10px;
     font-size: 24px;
+}
+.chapter1{
+    background-color: rgb(214, 149, 149);
+}
+.chapter2{
+    background-color: rgb(192, 241, 159);
+}
+.chapter3{
+    background-color: rgb(102, 216, 178);
+}
+.chapter4{
+    background-color: rgb(83, 139, 153);
+}
+.chapter5{
+    background-color: rgb(115, 88, 189);
 }
