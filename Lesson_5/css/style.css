@@ -1,0 +1,38 @@
+html{
+    background-color: #aeaeae;
+}
+h1, h2{
+    text-align: center;
+    color: #e21919;
+}
+p{
+    color: #3b22aa;
+    text-align: left;
+}
+ img{
+    margin: 0 auto;
+    display: block;
+    border: 3px solid #422222;
+}
+.text-italic{
+    font-style: italic;
+}
+.text-bold{
+    font-weight: bold;
+}
+.text-underline{
+    text-decoration: underline;
+}
+.line-through{
+    text-decoration: line-through;
+    display: inline-block;
+}
+#navigation{
+    background-color: #42aa8b74;
+    position: fixed;
+    padding: 30px;
+    width: 25%;
+    right: 10px;
+    bottom: 10px;
+    font-size: 24px;
+}
