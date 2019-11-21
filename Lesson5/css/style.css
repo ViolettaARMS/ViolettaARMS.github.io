@@ -28,15 +28,6 @@ p{
     text-decoration: line-through;
     display: inline-block;
 }
-#navigation{
-    background-color: #42aa8b74;
-    position: fixed;
-    padding: 30px;
-    width: 25%;
-    right: 10px;
-    bottom: 10px;
-    font-size: 24px;
-}
 .start{
     background-color: rgb(178, 77, 187);
 }
