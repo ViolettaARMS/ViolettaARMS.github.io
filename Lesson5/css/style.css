@@ -28,6 +28,9 @@ p{
     text-decoration: line-through;
     display: inline-block;
 }
+#navigation{
+    background-color: rgb(141, 29, 67);
+}
 .start{
     background-color: rgb(178, 77, 187);
 }
