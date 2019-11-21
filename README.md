@@ -6,6 +6,6 @@
 
 [Урок 4](https://violettaarms.github.io/Lesson4_1/ "Усложненное задание") - Урок 4 усложненное задание
 
-[Урок 5](https://violettaarms.github.io/Lesson_5/ "Обязательное задание") - Урок 5 обязательное задание
+[Урок 5](https://violettaarms.github.io/Lesson5/ "Обязательное задание") - Урок 5 обязательное задание
 
-[Урок 5](https://violettaarms.github.io/Lesson_5_1/ "Усложненное задание") - Урок 5 усложненное задание
+[Урок 5](https://violettaarms.github.io/Lesson5_1/ "Усложненное задание") - Урок 5 усложненное задание
