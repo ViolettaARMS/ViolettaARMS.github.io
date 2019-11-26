@@ -22,5 +22,9 @@
 
 [Урок № 5-Основы CSS](https://violettaarms.github.io/Lesson_5/ "Усложненное задание") - Усложненное задание
 
+[Урок № 6-Блочная модель CSS](https://violettaarms.github.io/Lesson6/ "Обязательное задание") - Обязательное задание
+
+[Урок № 6-Блочная модель CSS](https://violettaarms.github.io/Lesson6/ "Усложненное задание") - Усложненное задание
+
 [Урок №7-Flexbox CSS](https://violettaarms.github.io/Lesson7/ "Обязательное задание") - Обязательное задание
 
