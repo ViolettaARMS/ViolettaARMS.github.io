@@ -1,4 +1,5 @@
 html{
+  font-family: 'Arial', sans-serif;
   background-color: #f9f9f9;
 }
 .conteiner{
@@ -10,27 +11,47 @@ html{
   margin: auto;
   width: 90%;
   height: 150px;
-    justify-content: center;
-
+  justify-content: center;
+  padding-top: 50px;
 }
-h1{
-  text-align: center;
-  padding: 50px;
+h1{display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display: -o-flex;
+display: flex;
+justify-content: center;
+padding: 80px 0px;
 }
-.box{ align-items: center;
+.box{ 
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
   padding: 10px;
   flex-basis: 20%
 background-color: #aeaeae;
-text-align: center;
+justify-content: center;
+flex-direction:column;
 }
-button{font-size: 13px;
+img{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+}
+button{
   width: 200px;
   height: 55px;
+  padding: 20px 0px 20px 0px;
   background: rgba(255, 255, 255, 0.5);
   color: #23bac1;
   font-weight: bold;
-  border: 1px solid #23bac1
-  
+  border: 1px solid #23bac1;
+  font-size: 13px;
 }
 .text-bold{
   font-size: 18px;
