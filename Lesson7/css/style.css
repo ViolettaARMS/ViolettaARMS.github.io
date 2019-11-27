@@ -1,70 +1,36 @@
+html{
+  background-color: #f9f9f9;
+}
+.conteiner{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin: auto;
+  width: 90%;
+  height: 150px;
+    justify-content: center;
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }
-body,
-h1, p {
-  margin: 0;
+h1{
+  text-align: center;
+  padding: 50px;
 }
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  font-family: arial;
+.box{ align-items: center;
+  padding: 10px;
+  flex-basis: 20%
+background-color: #aeaeae;
+text-align: center;
 }
-img {
-  max-width: 100%;
-  display: block;
-  margin-bottom: 25px;
-}
-input[type=button] {
-  font: inherit;
+button{
+  width: 200px;
+  height: 55px;
+  background: rgba(255, 255, 255, 0.5);
   color: #23bac1;
-  border: 1px solid #23bac1;
-  padding: 20px 70px;
-  text-transform: uppercase;
-  font-size: 13px;
-  background: none;
+  font-weight: bold;
+  border: 1px solid #23bac1
 }
-input[type=button]:hover {
-  color: #ffffff;
-  background: #23bac1;
-  cursor: pointer;
+.text-bold{
+  font-weight: bold;
 }
-section#maketirovanie {
-   background: #f9f9f9;
-   padding: 95px 0 100px 0;
-}
-section#maketirovanie h1 {
-    text-align: center;
-}
-.container {
-    width: 1170px;
-    margin: 0 auto;
-}
-.row {
-    width: 100%;
-    margin: 125px 0;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.cell {
-    width: 25%;
-    float: left;
-    text-align: center;
-    padding: 0 15px;
-}
-.title, .price {
-    margin-bottom: 20px;
-}
-.title {
-    font-size: 16px;
-}
-.price {
-    font-size: 18px;
-}
-
