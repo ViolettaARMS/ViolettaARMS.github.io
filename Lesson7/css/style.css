@@ -23,14 +23,16 @@ h1{
 background-color: #aeaeae;
 text-align: center;
 }
-button{
+button{font-size: 13px;
   width: 200px;
   height: 55px;
   background: rgba(255, 255, 255, 0.5);
   color: #23bac1;
   font-weight: bold;
   border: 1px solid #23bac1
+  
 }
 .text-bold{
+  font-size: 18px;
   font-weight: bold;
 }
