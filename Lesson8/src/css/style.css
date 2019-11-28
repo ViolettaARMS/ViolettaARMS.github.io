@@ -134,7 +134,7 @@ background-color: #5e72e4;
     font-weight: 700;
     margin-bottom: 35px;
 }
-.footer a{
+.footer a{ text-decoration: none;
     display: block;
     color: #ffffff;
 }
