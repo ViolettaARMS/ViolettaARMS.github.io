@@ -6389,7 +6389,3 @@ a.text-danger:focus, a.text-danger:hover {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
-.box-shadow { box-shadow: 0 .50rem .75rem rgba(0, 0, 0, .05); }
-.pricing-header {
-  max-width: 700px;
-}
