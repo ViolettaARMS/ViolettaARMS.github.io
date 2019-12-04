@@ -1,12 +1,15 @@
 html{
 	font-family: sans-serif;
 }
+body{
+	margin: 0;
+}
 .wrapper{
 
 	background-color: #286c0a;
 	padding: 40px 0px;
 }
-.container{
+.flex_container{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -23,7 +26,7 @@ html{
 	background-color: #ffffff;
 }
 .cart-price__title{
-	padding: ;
+	padding:36px 0px ;
 	font-weight: bold;
 }
 
@@ -33,16 +36,17 @@ html{
 	display: block;
 	color: #ffffff;
 	text-align: center;
-	font-size: 24px;
+	font-size: 36px;
 }
 .subtitle{
 	padding-bottom: 50px;
 	display: block;
+	font-size: 18px;
 	color: #ffffff;
 	text-align: center;
 
 }
-p:before  {
+p.icon:before  {
    content: url(img/icon.png);
    padding-right: 10px;
 
@@ -57,7 +61,7 @@ img{
 .price__button{
 	margin-bottom: 50px;
 }
-.button-big{
+.button_big{
 	height: 64px;
 	width: 200px;
 
@@ -69,17 +73,20 @@ img{
 	border: 1px solid #fab102;
 	border-radius: 10px;
 	background-color: #fab102;
+	font-size: 19px;
 
 }
 .cart-price__text{
+	font-size: 19px;
 	padding: 20px 0px;
-	min-height: 500px;
+	min-height: 510px;
 }
 /***************************SERVICE***************************/
 .service{
 	margin: 50px 0px;
 }
-.button-small{
+.button_small{
+	margin-top: 45px;
 	margin-left: 120px;
 	height: 50px;
 	width: 140px;
