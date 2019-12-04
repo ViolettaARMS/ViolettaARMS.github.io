@@ -8,7 +8,8 @@ html{
 	max-width: 90%;
 	margin: 0 auto;
 }
-.item{padding: 0px 10px 0px 10px;
+.item{
+	padding: 0px 10px 0px 10px;
 	display: inline-block;
 	text-align: center;
 }
@@ -23,7 +24,7 @@ p{
 	font-size: 18px;
 	color: #666666;
 }
-.item__button{
+.item_button{
 	width: 130px;
 	height: 40px;
 	background-color: #66cc66;
