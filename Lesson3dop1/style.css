@@ -5,6 +5,7 @@ html{
 
 }
 .container{
+	text-align: center;
 	max-width: 90%;
 	margin: 0 auto;
 }
@@ -23,7 +24,7 @@ p{
 	font-size: 18px;
 	color: #666666;
 }
-.item_button{
+.item__button{
 	width: 130px;
 	height: 40px;
 	background-color: #66cc66;
@@ -33,12 +34,12 @@ p{
 color: #ffffff;
 }
 }
-.button-primary{
+.button_primary{
 	background-color: #66cc66;
 	color: #ffffff;
 
 }
-.button-outline{
+.button_outline{
 	margin-right: 10px;
 	background: rgba(255, 255, 255, 0.5);
 	color: #66cc66;
