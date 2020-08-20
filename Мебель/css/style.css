@@ -1,0 +1,530 @@
+body {font-family: Arial, sans-serif}
+.container {width: 1140px;}
+p {line-height: 2}
+h1 {
+	font-size: 60px;
+	color: rgb(58, 58, 58);
+	font-weight: bold;
+	text-transform: uppercase;
+  	
+}
+h2, h2.spl {
+  font-size: 45px;
+  color: rgb(58, 58, 58);
+  text-transform: uppercase;
+
+}
+h3 {  font-size: 30px;
+  color: rgb(246, 155, 84);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.title {
+    overflow: hidden;
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 2px;
+    margin: 80px 0 50px 0;
+    text-transform:uppercase;
+}
+.title:before,
+.title:after {
+    /* Обязательно указываем пустое свойство content, 
+    ** иначе псевдоэлементы не появятся на сайте */
+    content: "";
+    /* Указываем что наши линии будут строчно-блочные и 
+    ** выравнивание по высоте - по центру */
+    display: inline-block;
+    vertical-align: middle;
+    /* Задаем ширину 100% и выбираем высоту линии, 
+    ** в нашем примере она равна 4 пикселям */
+    width: 100%;
+    height: 2px;
+    /* Добавляем цвет для линии */
+    background-color: #F69B54;
+    /* Добавляем пседоэлемантам возможность изменить 
+    ** позицию линии, для создания отступов от текста */
+    position: relative;
+}
+.title:before {
+    /* Смещаем левую линию на 100% влево, чтобы линия 
+    ** встала рядом с текстом слева */
+    margin-left: -100%;
+    /* Указываем в пикселях отступ линии от текста заголовка */
+    left: -50px;
+}
+.title:after {
+    /* Смещаем правую линию на 100% вправо, чтобы 
+    ** линия встала рядом с текстом справа */
+    margin-right: -100%;
+    /* Указываем в пикселях отступ линии от текста заголовка */
+    right: -50px;
+}
+
+.btn-lg {
+	background:#3a3a3a; 
+	color:#fff; 
+	text-transform: uppercase; 
+	font-size: 20px;
+	letter-spacing: 2px;
+    margin-top: 50px;
+    padding: 15px 50px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+#contacts a {color: #1f1a16; }
+#contacts {margin:35px 0; font-size: 24px;}
+
+#contacts .al0, #handmade .al0 {
+	text-align: left;
+} 
+#contacts .al1, #handmade .al1 {
+	text-align: center;
+}
+#contacts .al2, #handmade .al2 {
+	text-align: right;
+}
+#contacts .al1, #handmade .al1{text-align: center;}
+#contacts .al2{text-align: right;}
+#handmade {display: table;background: #F4F4F4; padding: 100px 0; width: 100%;}
+#handmade div.col-xs-6:last-child {text-align: center}
+/**************Меню**************/
+#nav {
+	background-color: #f69b54;
+    display: table;
+    font-size: 24px;
+    width: 100%;
+}
+#nav ul {
+	height: 55px;
+    margin: 20px 0 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: justify;
+}
+#nav ul li {
+ 	display: inline;
+}
+#nav ul li a {
+ 	display: inline-block;
+ 	color: #fff;
+}
+/*генерирует дополнительное содержимое, размер одной строки будет 
+превышен и текст растянется. Этот дополнительный контент
+(в примере 1) не будет виден благодаря обрезке overflow:hidden. 
+Можно дополнительно скрыть его с помощью height:0 или 
+visibility:hidden.
+Еще нюансы кода: для того, чтобы слова в отдельных пунктах не 
+разрывались применяется inline-block вместо inline  (в правилах для a).*/
+#nav ul:after {
+ 	content: "1";
+ 	margin-left: 100%;
+ 	display: inline-block;
+}
+#catalog img{width: 100%;
+ max-width: 250px;
+}
+/*****************Каталог*******************/
+#catalog{
+  background-color:#F4F4F4;
+   padding-bottom: 105px;
+}
+.item-cat{text-align: center;
+  height: 360px;
+  background-color: #ffffff;
+  margin-top:20px;
+}
+.item-tcat span {
+  font-size: 20px;
+  color: #f69b54;
+}
+.item-tcat h4{font-size: 20px;}
+.cart{
+  width: 45px;
+  height: 45px;
+   position: absolute;
+    right:25px;
+    top:25px;
+    display: block;
+}
+/*****************Услуги********************/
+#services {display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display: -o-flex;
+display: flex;  
+	padding-bottom: 115px;
+}
+
+.carousel .c-item{
+	text-align: center;
+	border: 1px solid #f69b54;
+	padding: 0 10px;
+}
+.carousel .c-item img{
+	margin: 15px 0 0;
+	height: 43px;
+	overflow: hidden;
+}
+.carousel .c-item h2{
+	font-size: 30px;
+	text-transform: uppercase;
+	padding: 20px 0;
+	margin: 0;
+	height: 73px;
+	overflow: hidden;
+}
+.carousel .c-item p{
+	border-bottom: 1px solid #f69b54;
+	border-top: 1px solid #f69b54;
+	height: 170px;
+	padding-top: 15px;
+	overflow: hidden;
+}
+.carousel .c-item .btn-small{
+	font-size: 18px;
+	background:#3a3a3a; 
+	color:#fff;  
+   	margin: 10px 0 20px;
+    padding: 5px 25px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}.btn-big{
+  font-size: 20px;
+  background:#3a3a3a; 
+  color:#fff;  
+    margin: 20px 0;
+    padding: 10px 35px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+
+.carousel-control {
+  width:5%;
+}
+.carousel-inner > .item {
+	margin: 0 40px;
+}
+.carousel-control.left {
+	background: url("../img/arrow-l.png") no-repeat;
+	width: 54px;
+	height: 54px;
+	margin-top: 150px;
+}
+.carousel-control.right {
+	background: url("../img/arrow-r.png") no-repeat;
+	width: 54px;
+	height: 54px;
+	margin-top: 150px;
+}
+/***************О нас*******************/
+#about {
+  text-align: center;
+   padding-bottom: 105px;
+
+}
+#about h3{
+  text-transform: uppercase;
+}
+.btn-small{ 
+  margin:40px 0 100px 0;
+  font-size: 18px;
+  background:#3a3a3a; 
+  color:#fff;  
+  
+    padding: 5px 25px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+/******************Новости**************************/
+#news{
+   padding-bottom: 105px;
+}
+.n-item{
+   background-color:#fff9d9;
+  height: 400px;
+  padding: 20px;
+}
+.n-item .hdr{
+  height: 53px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.n-item .hdr h4{
+font-size: 20px;
+}
+.n-item .info{
+  height: 150px;
+  overflow: hidden;
+}
+
+.btn-green{
+
+  font-size: 18px;
+  background:#a7a217; 
+  color:#fff;  
+  padding: 5px 25px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+/***************Акции*********************/
+#shares{
+  background-color: #F4F4F4;
+   padding-bottom: 105px;
+}
+.s-item{
+  background-color: #fff;
+  height: 480px;
+  padding:15px;
+}
+.s-item .per{
+  padding-top: 15px;
+  color: #f69b54;
+  font-size: 16px;
+}
+.s-item .info{
+  height: 150px;
+  overflow: hidden;
+}
+/******************Преимущества***************/
+#advantages {
+  background: #F8F7F5;
+  display: table;
+  padding-bottom: 105px;
+  width: 100%; 
+  overflow: hidden;
+}
+#advantages .img{
+  position: relative;  
+}
+#advantages h3 {
+    color: #000;
+    font-size: 23px;
+    height: 27px;
+    margin: 20px 0 5px;
+    overflow: hidden;
+}
+#advantages .adv-item {
+    height: 250px;
+    overflow: hidden;
+}
+#advantages .txt {
+  height: 80px;
+  overflow: hidden;
+}
+/******************Отзывы***********************/
+#reviews {
+  padding-bottom: 120px;
+  font-size: 20px;
+}
+#reviews #img-tabs {
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+#reviews #img-tabs img {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+}
+#reviews #img-tabs img.active {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+}
+#reviews #rev-txts .txt {
+  display: none;
+}
+#reviews #rev-txts .txt.active {
+  display: block;
+}
+#reviews #rev-txts .txt-name {
+    color: #a7a217;
+    margin-top: 15px;
+}
+#reviews #rev-txts .txt-name:before{
+  content: "-";
+}
+#reviews #rev-txts .txt-name:after{
+  content: "-";
+}
+#reviews #rev-txts .txt-proff {
+  font-size: 16px;
+}
+.np {padding: 0;}
+.d-ib {display: inline-block}
+/*************************Подвал************************/
+#footer {
+  background: #f9f8f6;
+  width: 100%;
+  display: table;
+  padding: 60px 0 90px 0;
+}
+#footer .ftr {
+  font-size: 30px;
+  margin-top: 12px;
+  text-transform: uppercase;
+  padding: 0;
+}
+#footer .hdr {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+#footer .phn, #footer .eml, #footer .adr{
+    display: table-cell;
+    float: none;
+    height: 100%;
+}
+#footer .phn {
+    font-size: 25px;
+}
+#footer i.iphn {
+    background: url('../img/ftr_2.png') no-repeat; 
+    height: 24px;
+    padding-right: 15px;
+    vertical-align: middle;
+    width: 15px;
+}
+#footer .eml{font-size: 20px}
+#footer i.ieml {
+    background: url('../img/ftr_3.png') no-repeat; 
+    vertical-align: middle;
+    width: 18px;
+    height: 15px;
+}
+#footer .adr{font-size: 16px}
+#footer i.iadr {
+    background: url('../img/ftr_4.png') no-repeat; 
+    vertical-align: top;
+    width: 12px;
+    height: 20px;
+    margin-top: 5px;
+}
+.sp{ float:left;}
+.sp2{
+  margin: 0 50px;
+}
+.sp1{margin-left: -40px;}
+.sp a{font-size: 20px;
+color: #aca826;
+text-decoration: underline;}
+.sp li{list-style-type: none;}
+
+
+.row-height {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  margin-bottom: 5px;
+}
+.vcenter {
+    vertical-align: middle;
+}
+.vtop {
+    vertical-align: top;
+}
+#footer .row-height > div:first-child{
+  display: table-cell;
+  text-align: center;
+  width: 26px;
+}
+#footer .row-height > div:first-child > i {
+  display: inline-block;
+}
+#footer .row-height a{
+  color: #1f1a16
+}
+.np {padding: 0;}
+.d-ib {display: inline-block}
+#contacts, #handmade, #nav, #services, #catalog, #about, #advantages, #news, #shares, #reviews, #footer{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;  
+}
+@media screen and (max-width: 768px) {
+    #contacts .al0, #contacts .al1,  #contacts .al2, 
+    #handmade .al0, #handmade .al1, #handmade .al2, #footer
+    {
+        text-align: center;
+    }
+    .carousel .c-item:first-child {
+      margin-left: 0;
+    }
+    #advantages .img { display: none;}
+    .btn{
+      margin-top: 10px;
+      margin-bottom: 10px;
+     font-size: 8px;  
+
+    }
+    #footer .wid{
+      width: 100%;
+      display: inline-block;
+      text-align: left;
+      margin-top: 30px;
+       font-size: 50%;
+    }
+}
+@media screen and (max-width: 992px) {
+    #contacts .al0, #contacts .al1,  #contacts .al2, 
+    #handmade .al0, #handmade .al1, #handmade .al2 
+    {
+        text-align: center;
+    }
+   #advantages .img { display: none;}
+   #nav{
+   display: flex;
+
+    font-size: 14px;
+   }
+   #advantages, #news, #shares{
+    text-align: center; 
+   }
+   #handmade{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;  
+   }
+   #handmade img{
+   width: 50%;
+   height: 50%; 
+   }
+   #contacts{
+    display: flex;
+   }
+   .btn{
+      margin-top: 10px;
+      margin-bottom: 10px;
+     font-size: 10px;  
+      
+    }
+    #footer .wid{
+      width: 100%;
+      display: inline-block;
+      text-align: left;
+      min-width: 0 auto;
+      margin-top: 30px;
+    }
+     #footer {
+      font-size: 50%;
+     }
+     .s-item, .n-item, .adv-item {
+    margin-top: 10px; 
+    margin-top: 10px;
+}
+.s-item img{
+  width: 50%;
+}
+}
+
