@@ -1,3 +1,48 @@
+@font-face {
+font-family: "Roboto-Bold";  
+src: url("../fonts/Roboto-Bold.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal;
+ }
+ @font-face {
+font-family: "Roboto-Medium";  
+src: url("../fonts/Roboto-Medium.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal;
+ }
+  @font-face {
+font-family: "Roboto-black";  
+src: url("../fonts/Roboto-Black.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal;
+ }
+@font-face{
+font-family: "Roboto-Regular";
+src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: "OpenSans";
+src: url("../fonts/OpenSans-Light.ttf") format("truetype");
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: "OpenSans-Bold";
+src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face{
+font-family: "OpenSans-SemiBold";
+src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+font-style: normal; 
+font-weight: normal; 
+}
+body{
+	font-family: OpenSans;
+}
 .main{
 	background: url(../img/main/main-img.jpg) no-repeat center;
 	padding-bottom: 80px;
@@ -21,8 +66,10 @@
 	border-radius: 100px;
 	font-weight: bold;
 }
-.text-title{
+span.text-title{
+	font-family: "Roboto-Bold";
 	font-size: 115px;
+	font-weight: 700;
 }
 .hero-text{
 	line-height: 35px;
@@ -31,7 +78,8 @@
 .yw{
 	color: #fbf934;
 }
-.subtitle{
+h3.subtitle{
+	font-family: "Roboto-Regular";
 	padding-bottom: 90px;
 	font-size: 50px;
 }
@@ -53,10 +101,10 @@
 .product img{
 	height: 250px;
 }
-.terndy-collection-title{
+.section-title{
+	font-family: "OpenSans-Bold";
 	font-weight: bold;
 	font-size: 50px;
-	padding: 100px 0px;
 }
 .product-title {
 	font-size: 18px;
@@ -75,10 +123,6 @@
 .our-brand{
 	padding-bottom: 70px;
 }
-.our-brand-title{
-	font-size: 50px;
-	font-weight: bold;
-}
 .our-brand-subtitle{
 	padding: 35px 0px;
 	font-size: 25px;
@@ -90,9 +134,10 @@
 .our-brand-text{
 	font-size: 16px;
 	color: #888888;
-	line-height: 20px;
+	line-height: 25px;
 }
 .newsletter{
+	font-family: "Roboto-Black";
 	background: linear-gradient(to right, #8c84f9, #a165f4);
 	padding-top: 150px;
 	margin-top: -150px;
@@ -105,12 +150,6 @@
 	margin-top: -150px;
 	opacity: 0.1;
 }
-
-.footer-title{
-	font-size: 40px;
-
-}
-
 .nav-tabs {
 	display: flex;
 	flex-wrap: wrap;
@@ -229,7 +268,7 @@ color: #fff;
 	font-size: 20px;
 	padding: 55px 0px;
 }
-.list{
+.list{font-family: "OpenSans-SemiBold";
 	color: #000;
 	padding: 0px 25px;
 }
@@ -237,9 +276,13 @@ color: #fff;
 	text-decoration: none;
 	color: #000;
 }
+.footer-title{
+font-family: "Roboto-Medium";
+	font-size: 40px;
+
+}
 .footer-copy{
 	padding: 30px 0px;
-	
 	color: #777777;
 	background-color: #f6f5f7;
 }
