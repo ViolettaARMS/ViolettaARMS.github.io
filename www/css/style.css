@@ -207,9 +207,7 @@ textarea:focus, input[type="text"]:focus,textarea[type="text"]:focus,   input[ty
 	box-shadow: none;
 }
 .newsletter h1 {color: #ffffff; font-weight: bold; font-size: 50px;}
-input[type="text"]{
-color:#000;
-}
+
 .fa-long-arrow-right {color: #8d83f9; font-size: 18px;}
 .social-icon{
 	margin: 0px 15px;
