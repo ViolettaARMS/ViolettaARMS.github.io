@@ -93,6 +93,7 @@ h3.subtitle{
 }
 .product{
 	padding: 20px 0px 80px 0px;
+	margin-top: 40px;
 }
 .product:hover{
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
@@ -121,7 +122,7 @@ h3.subtitle{
 	color: #8c84f9;
 }
 .our-brand{
-	padding-bottom: 70px;
+	margin-bottom: 70px;
 }
 .our-brand-subtitle{
 	padding: 35px 0px;
@@ -131,6 +132,15 @@ h3.subtitle{
 .violet{
 	color: #8d83f9;
 }
+.gray {
+	color: #bbb;
+	font-size: 14px;
+}
+.cmt-cnt {
+	height: 22px;
+	margin-bottom: 30px;
+}
+.comments img {height: 22px;}
 .our-brand-text{
 	font-size: 16px;
 	color: #888888;
@@ -165,6 +175,10 @@ h3.subtitle{
 	text-shadow: -1px 6px 6px #a165f4;
 	font-size: 20px;
 }
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+	background-color: transparent;
+	border: none;
+}
 .nav-tabs .nav-link {
 	border: 0;
 	margin: 5px;
@@ -190,6 +204,35 @@ h3.subtitle{
 	-moz-box-shadow: 2px 3px 10px 2px rgb(189, 227, 239, 1);
 	box-shadow: 2px 3px 10px 2px rgb(189, 227, 239, 1);
 }
+
+.row-trendy .btn {
+	width: 100%;
+	background: linear-gradient(to right, #8c84f9, #a165f4);
+	padding: 12px;
+	color: #fff;
+	margin-bottom: 0;
+	margin-top: -25px;
+}
+.row-trendy .btn:focus, .btn.focus {
+	box-shadow: none;
+}
+.terndy-collection .btn-cnt { height: 60px;}
+.terndy-collection .btn-cart, .terndy-collection .comments {
+	display: none;
+}
+.terndy-collection .col-md-4:hover .btn-cart{
+	display: block;
+}
+.terndy-collection .col-md-4:hover .comments {
+	display: flex;
+}
+.terndy-collection .col-md-4:hover .product .product-price{
+	color: #8c84f9;
+}
+.terndy-collection .col-md-4:hover .product{
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+}
+
 .gr-send {
 	height: 60px;
     background: #fff;
@@ -208,8 +251,8 @@ h3.subtitle{
 .gr-send .form-control[type="text"] {
 	margin-top: 5px;
 	border: 0;
-
 }
+
 textarea:focus, input[type="text"]:focus,textarea[type="text"]:focus,   input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus,  input[type="color"]:focus, .uneditable-input:focus, .form-control, .form-control:focus {  
 	border-color: none;
 	box-shadow: none;
@@ -228,9 +271,14 @@ textarea:focus, input[type="text"]:focus,textarea[type="text"]:focus,   input[ty
 }
 .search-block .btn {
 	border: none;
-	border-left: 1px solid #e0e0e0; 
-	margin-top: 4px;
 	color: #121212;
+	width: 100%;
+}
+
+.ddn-search {    
+	border-left: 1px solid #ccc;
+    height: 55px;
+    margin-top: 5px;
 }
 .btn-outline-secondary:hover {
 	background-color: transparent;
@@ -242,13 +290,21 @@ textarea:focus, input[type="text"]:focus,textarea[type="text"]:focus,   input[ty
 	background: transparent;
 	color: #121212;
 }
-
+.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle {
+	background-color: transparent;
+	border-color: none;
+	color: #222;
+}
 .btn-outline-secondary:focus, .btn-outline-secondary.focus {
 	box-shadow: none;
 }
 .newsletter h1 {color: #ffffff; font-weight: bold; font-size: 50px;}
 
 .fa-long-arrow-right {color: #8d83f9; font-size: 18px;}
+.gr-btn { 
+	height: 60px;
+	margin-top: -35px;
+}
 .social-icon{
 	margin: 0px 15px;
 	width: 50px;
@@ -258,7 +314,7 @@ textarea:focus, input[type="text"]:focus,textarea[type="text"]:focus,   input[ty
 	font-size: 18px;
 	line-height: 50px;
 }
-.social-icon:hover{
+.social-icon:hover{	box-shadow: 2px 3px 10px 2px rgb(189, 227, 239, 0.5);
 	background: linear-gradient(to top, #8c84f9, #a165f4);
 color: #fff;
 }
@@ -274,9 +330,11 @@ color: #fff;
 	padding: 0px 25px;
 }
 .list:hover{
+
 	text-decoration: none;
 	color: #000;
 }
+
 .footer-title{
 font-family: "Roboto-Medium";
 	font-size: 40px;
@@ -296,13 +354,24 @@ font-family: "Roboto-Medium";
 		margin-top: -62px;
 	}
 	.newsletter h1 {font-size: 30px;}
-	
+	.our-brand{
+		margin-bottom: 140px;
+	}
+	span.text-title {
+		font-size: 75px;
+	}
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
 	.notified {
 		font-size: 70px;
 		margin-top: -85px;
+	}
+	.our-brand{
+		margin-bottom: 140px;
+	}
+	span.text-title {
+		font-size: 95px;
 	}
 }
 
@@ -311,7 +380,14 @@ font-family: "Roboto-Medium";
 		font-size: 80px;
 		margin-top: -95px;
 	}
+	.our-brand{
+		margin-bottom: 140px;
+	}
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) { 
+	.notified {
+		font-size: 100px;
+		margin-top: -105px;
+	}
 }
