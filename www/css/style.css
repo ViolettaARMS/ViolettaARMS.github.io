@@ -121,6 +121,30 @@ h3.subtitle{
 	font-weight: bold;
 	color: #8c84f9;
 }
+img.element-3{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 145px;
+    top: -15px;}
+img.element-4{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 325px;
+    top: 28px;
+    z-index: -1;}
+img.element-5{
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    right: 150px;
+    top: 25px;}
+ .element-7{  position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -77px;
+    bottom: 100px;} 
 .our-brand{
 	margin-bottom: 70px;
 }
